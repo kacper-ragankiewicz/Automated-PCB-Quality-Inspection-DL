@@ -7,7 +7,7 @@ model = load_model("best_model.h5")
 
 # Load and preprocess the test image
 # Match the size used during training
-img = load_img("pcb_data/3ymxgu5dewzd1.jpeg", target_size=(128, 128))
+img = load_img("photos/1.jpg", target_size=(128, 128))
 img_array = img_to_array(img) / 255.0  # Normalize pixel values to [0, 1]
 img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
 
